@@ -1,0 +1,46 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title >Credito</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <h3>Datos personales</h3>
+  <ion-list>
+
+    <ion-item>
+      <ion-label floating>Nombres</ion-label>
+      <ion-input type="text" [(ngModel)]="credito.nombre"></ion-input>
+    </ion-item>
+  
+    <ion-item>
+      <ion-label floating>Apellidos</ion-label>
+      <ion-input type="text" [(ngModel)]="credito.apellidos"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label floating>Direccion</ion-label>
+      <ion-input type="text" [(ngModel)]="credito.direccion"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label floating>Identificacion</ion-label>
+      <ion-input type="text" [(ngModel)]="credito.documento"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label floating>Tel Fijo</ion-label>
+      <ion-input type="text" [(ngModel)]="credito.fijo"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label floating>Celular</ion-label>
+      <ion-input type="text" [(ngModel)]="credito.celular"></ion-input>
+    </ion-item>
+  
+  </ion-list>
+
+  <div padding>
+    <button ion-button full (click)="guardarCredito()">Guardar</button>
+  </div>
+</ion-content>

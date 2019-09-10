@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-navbar color="dark">
+    <ion-title text-center>
+      SHARO Fashion Store
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <h3>Creditos</h3>
+  <ion-searchbar (ionInput)="getItems($event)"></ion-searchbar>
+  <ion-list>
+    <ion-item *ngFor="let item of items" (click)="navegarARegistro()">
+      <h2>{{ item.nombre }}</h2>
+      <p>Cedula: {{item.id}}</p>
+    </ion-item>
+  </ion-list>
+
+  
+
+  <ion-fab right bottom>
+    <button ion-fab color="dark" (click)="crearRegistro()"><ion-icon name="add"></ion-icon></button>
+  </ion-fab>
+</ion-content>
+
